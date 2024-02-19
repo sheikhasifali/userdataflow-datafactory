@@ -1,0 +1,9 @@
+{
+	"name": "Data-Factory-project-Userdata",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "5dab6240-86ea-4ab6-bd56-327066bec42a",
+		"tenantId": "03ad4e96-41a3-4387-a8af-6039c9c23459"
+	}
+}
