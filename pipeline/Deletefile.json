@@ -69,7 +69,20 @@
 							"typeProperties": {
 								"dataset": {
 									"referenceName": "Binary1",
-									"type": "DatasetReference"
+									"type": "DatasetReference",
+									"parameters": {
+										"filesname": {
+											"value": "@item().name",
+											"type": "Expression"
+										}
+									}
+								},
+								"logStorageSettings": {
+									"linkedServiceName": {
+										"referenceName": "AzureBlobStorage1",
+										"type": "LinkedServiceReference"
+									},
+									"path": "blob-all-user-files"
 								},
 								"enableLogging": true,
 								"storeSettings": {
