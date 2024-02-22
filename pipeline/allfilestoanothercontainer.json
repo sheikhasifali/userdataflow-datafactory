@@ -15,12 +15,19 @@
 				},
 				"typeProperties": {
 					"dataset": {
-						"referenceName": "AzureSqlTable4",
+						"referenceName": "DelimitedText4",
 						"type": "DatasetReference"
 					},
 					"fieldList": [
-						"exists"
-					]
+						"childItems"
+					],
+					"storeSettings": {
+						"type": "AzureBlobStorageReadSettings",
+						"enablePartitionDiscovery": false
+					},
+					"formatSettings": {
+						"type": "DelimitedTextReadSettings"
+					}
 				}
 			},
 			{
