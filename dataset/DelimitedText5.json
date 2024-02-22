@@ -15,6 +15,10 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
+				"fileName": {
+					"value": "@dataset().Filesname",
+					"type": "Expression"
+				},
 				"container": "blob-all-user-files"
 			},
 			"columnDelimiter": ",",
