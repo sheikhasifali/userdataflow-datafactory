@@ -64,21 +64,15 @@
 							"userProperties": [],
 							"typeProperties": {
 								"source": {
-									"type": "DelimitedTextSource",
-									"storeSettings": {
-										"type": "AzureBlobStorageReadSettings",
-										"recursive": true,
-										"enablePartitionDiscovery": false
-									},
-									"formatSettings": {
-										"type": "DelimitedTextReadSettings"
-									}
+									"type": "AzureSqlSource",
+									"queryTimeout": "02:00:00",
+									"partitionOption": "None"
 								},
 								"enableStaging": false
 							},
 							"inputs": [
 								{
-									"referenceName": "DelimitedText5",
+									"referenceName": "AzureSqlTable4",
 									"type": "DatasetReference"
 								}
 							]
