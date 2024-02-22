@@ -98,7 +98,13 @@
 							"inputs": [
 								{
 									"referenceName": "DelimitedText6",
-									"type": "DatasetReference"
+									"type": "DatasetReference",
+									"parameters": {
+										"filename": {
+											"value": "@item()",
+											"type": "Expression"
+										}
+									}
 								}
 							],
 							"outputs": [
