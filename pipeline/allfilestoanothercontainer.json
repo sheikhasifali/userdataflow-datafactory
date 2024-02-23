@@ -24,6 +24,10 @@
 					],
 					"storeSettings": {
 						"type": "AzureBlobStorageReadSettings",
+						"modifiedDatetimeEnd": {
+							"value": "@addDays(utcNow(),-1)",
+							"type": "Expression"
+						},
 						"enablePartitionDiscovery": false
 					},
 					"formatSettings": {
