@@ -31,7 +31,10 @@
 							"referenceName": "AzureBlobStorage1",
 							"type": "LinkedServiceReference"
 						},
-						"path": "blob-all-user-files"
+						"path": {
+							"value": "@activity('Get Metadata1').output",
+							"type": "Expression"
+						}
 					},
 					"enableLogging": true,
 					"storeSettings": {
