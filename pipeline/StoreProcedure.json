@@ -31,7 +31,35 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"storedProcedureName": "[dbo].[SimpleStoredProcedure]"
+					"storedProcedureName": "[dbo].[YourStoredProcedureName]",
+					"storedProcedureParameters": {
+						"adfName": {
+							"value": {
+								"value": "@pipeline().DataFactory",
+								"type": "Expression"
+							},
+							"type": "String"
+						},
+						"pipelineName": {
+							"value": {
+								"value": "@pipeline().GroupId",
+								"type": "Expression"
+							},
+							"type": "String"
+						},
+						"runId": {
+							"value": "",
+							"type": "String"
+						},
+						"triggerName": {
+							"value": "",
+							"type": "String"
+						},
+						"triggerTime": {
+							"value": "",
+							"type": "DateTime"
+						}
+					}
 				},
 				"linkedServiceName": {
 					"referenceName": "AzureSqlDatabase1",
