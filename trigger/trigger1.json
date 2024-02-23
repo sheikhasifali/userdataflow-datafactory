@@ -14,10 +14,15 @@
 		"type": "ScheduleTrigger",
 		"typeProperties": {
 			"recurrence": {
-				"frequency": "Minute",
+				"frequency": "Month",
 				"interval": 1,
 				"startTime": "2024-02-23T21:49:00",
-				"timeZone": "Pakistan Standard Time"
+				"timeZone": "Pakistan Standard Time",
+				"schedule": {
+					"monthDays": [
+						1
+					]
+				}
 			}
 		}
 	}
