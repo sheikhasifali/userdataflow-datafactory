@@ -42,17 +42,23 @@
 						},
 						"pipelineName": {
 							"value": {
-								"value": "@pipeline().GroupId",
+								"value": "@pipeline().Pipeline",
 								"type": "Expression"
 							},
 							"type": "String"
 						},
 						"runId": {
-							"value": "",
+							"value": {
+								"value": "@pipeline().RunId",
+								"type": "Expression"
+							},
 							"type": "String"
 						},
 						"triggerName": {
-							"value": "",
+							"value": {
+								"value": "@pipeline().TriggerName",
+								"type": "Expression"
+							},
 							"type": "String"
 						},
 						"triggerTime": {
