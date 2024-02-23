@@ -15,25 +15,7 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"dataset": {
-						"referenceName": "DelimitedText4",
-						"type": "DatasetReference"
-					},
-					"fieldList": [
-						"childItems"
-					],
-					"storeSettings": {
-						"type": "AzureBlobStorageReadSettings",
-						"recursive": true,
-						"modifiedDatetimeEnd": {
-							"value": "@adddays(utcnow(),-1)",
-							"type": "Expression"
-						},
-						"enablePartitionDiscovery": false
-					},
-					"formatSettings": {
-						"type": "DelimitedTextReadSettings"
-					}
+					"fieldList": []
 				}
 			},
 			{
